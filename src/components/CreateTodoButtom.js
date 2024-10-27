@@ -1,6 +1,12 @@
 function CreateTodoButtom() {
     return (
-        <button>¡Presioname!</button>
+        <button
+            className="CreateTodoButtom"
+            onClick={
+                () => console.log("Le diste click!")
+            }
+        >¡Presioname!</button>
+        
     );
 }
 
