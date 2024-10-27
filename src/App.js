@@ -16,11 +16,23 @@ const defaultTodos = [
 ];
 
 function App() {
-  return (
-    <React.Fragment>
+  const [todos, setTodos] = React.useState( defaultTodos );
+  const [searchValue, setSearchValue] = React.useState();
+  console.log("Los usuarios buscan " + searchValue);
+  const completedTodos = todos.filter((todo) => todo.completed === true).length;
 
-      <TodoCounter completed={ 0 } total={ defaultTodos.length }/>
-      <TodoSearch />
+  return (
+    <>
+
+      <TodoCounter 
+        completed={ completedTodos } 
+        total={ todos.length }
+      />
+
+      <TodoSearch 
+        searchValue={ searchValue }
+        setSearchValue={ setSearchValue }
+      />
 
       <TodoList>
         {defaultTodos.map(todo => (
@@ -33,7 +45,7 @@ function App() {
       </TodoList>
 
       <CreateTodoButtom />
-    </React.Fragment>
+    </>
   );
 }
 
