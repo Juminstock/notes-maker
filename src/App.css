@@ -1,3 +1,13 @@
-.App {
+body {
+  font-family: "Bricolage Grotesque", serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+h1 {
+  font-size: 24px;
   text-align: center;
+  margin: 0;
+  padding: 48px;
 }
