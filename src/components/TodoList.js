@@ -1,7 +1,7 @@
 function TodoList({ children }) {
     return (
         <ul>
-            {children}
+            { children }
         </ul>
     );
 }
