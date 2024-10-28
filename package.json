@@ -1,5 +1,5 @@
 {
-  "name": "notes-maker",
+  "name": "task-maker",
   "version": "0.1.0",
   "dependencies": {
     "react": "^18",

@@ -1,8 +1,15 @@
 body {
   font-family: "Bricolage Grotesque", serif;
   margin: 0;
-  padding: 0;
-  color: black;
+}
+
+.App {
+  min-height: 100vh;
+  background: #ecffc1;
+  background: -webkit-linear-gradient(160deg, #ecffc1 0%, #ffe6cc 50%, #dfbaf7 100%);
+  background: linear-gradient(160deg, #ecffc1 0%, #ffe6cc 50%, #dfbaf7 100%);
+  display: flex;
+  flex-direction: row;
 }
 
 h1 {
